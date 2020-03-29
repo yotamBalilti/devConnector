@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const Login = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -45,7 +45,7 @@ export const Login = () => {
               minLength='6'
             />
           </div>
-          <input type='submit' className='btn btn-primary' value='Register' />
+          <input type='submit' className='btn btn-primary' value='Login' />
         </form>
         <p className='my-1'>
           Don't have an account? <Link to='/register'>Sign Up</Link>
@@ -54,3 +54,5 @@ export const Login = () => {
     </Fragment>
   );
 };
+
+export default Login;
